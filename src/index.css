@@ -2,4 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", serif;
+  font-weight: 300;
+ 
+  ;
+}
+
+.card1:hover{
+  transform: scale(1.02);
+  color:white;
+  border: 1px solid #d68910;
+  
+  
+
 }
