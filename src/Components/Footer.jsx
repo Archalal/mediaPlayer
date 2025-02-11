@@ -21,9 +21,9 @@ const Footer = () => {
         <div className="col-1"></div>
         <div className="col-2">
         <h5>Links</h5>
-          <Link  style={{textDecoration:"none" ,color:"white"}} to={""}><p>Landing page</p > </Link>
-          <Link style={{textDecoration:"none" ,color:"white"}} to={""}><p>Home page</p></Link>
-          <Link style={{textDecoration:"none" ,color:"white"}}to={""}><p>History page</p></Link>
+          <Link  style={{textDecoration:"none" ,color:"white"}} to={"/"}><p>Landing page</p > </Link>
+          <Link style={{textDecoration:"none" ,color:"white"}} to={"/home"}><p>Home page</p></Link>
+          <Link style={{textDecoration:"none" ,color:"white"}}to={"/history"}><p>History page</p></Link>
         </div>
         <div className="col-1"></div>
         <div className="col-2">
