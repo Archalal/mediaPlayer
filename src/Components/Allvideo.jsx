@@ -4,10 +4,10 @@ import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import { addHistory, deleteVideo, getAllVideo } from "../services/allAPI";
 
-const Allvideo = (videosResp) => {
+const Allvideo = (videosResp,delVideoresponse) => {
   useEffect(() => {
     getVideos();
-  }, [videosResp]);
+  }, [videosResp,delVideoresponse]);
 
   const [show, setShow] = useState(false);
   const [data, setData] = useState([]);
@@ -59,7 +59,8 @@ const Allvideo = (videosResp) => {
   }
 
   const onVideoDrag=(event,id)=>{
-    // console.log(event,id);
+    // console.log(id);
+    // console.log(event.dataTransfer);
     event.dataTransfer.setData("videoDetails",id)
     
   }
