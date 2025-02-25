@@ -9,6 +9,7 @@ const Home = () => {
 
   const[videoResponseLoad,setVideoResponseLoad]=useState("")
   const[delVideoresponse,setDelVideoresponse]=useState("")
+  const[categorydeleteResponse,setcategorydeleteResponse]=useState("")
   return (
     <div className='container'>
       <div className='d-flex justify-content-between py-5'>
@@ -21,10 +22,10 @@ const Home = () => {
       </div>
     <div className="row">
       <div className="col-6">
-        <Allvideo  videosResp={videoResponseLoad} delVideoresponse={delVideoresponse} />
+        <Allvideo  videosResp={videoResponseLoad} delVideoresponse={delVideoresponse} setcategorydeleteResponse={setcategorydeleteResponse} />
       </div>
       <div className="col-6">
-        <AllCategories setDelVideoresponse={setDelVideoresponse} />
+        <AllCategories setDelVideoresponse={setDelVideoresponse} categorydeleteResponse={categorydeleteResponse} />
       </div>
     </div>
       
